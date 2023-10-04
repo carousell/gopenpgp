@@ -18,5 +18,5 @@ const (
 	SIGNATURE_BAD_CONTEXT int = 4
 )
 
-const DefaultCompression = 2      // ZLIB
-const DefaultCompressionLevel = 6 // Corresponds to default -1 for ZLIB
+const DefaultCompression = 1      // ZIP
+const DefaultCompressionLevel = 6 // Corresponds to default for LIB

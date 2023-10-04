@@ -146,7 +146,7 @@ func (sk *SessionKey) Encrypt(message *PlainMessage) ([]byte, error) {
 // * signKeyRing: The KeyRing to sign the message
 // * output  : The encrypted data as PGPMessage.
 func (sk *SessionKey) EncryptAndSign(message *PlainMessage, signKeyRing *KeyRing) ([]byte, error) {
-	return encryptWithSessionKey(message, sk, signKeyRing, false, nil)
+	return encryptWithSessionKey(message, sk, signKeyRing, true, nil)
 }
 
 // EncryptAndSignWithContext encrypts a PlainMessage to PGPMessage with a SessionKey and signs it with a Private key.
