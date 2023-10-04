@@ -32,7 +32,7 @@ Loop:
 			hasPacket = true
 			ek = p
 
-			for _, key := range keyRing.entities.DecryptionKeys() {
+			for _, key := range keyRing.entities.KeysById(ek.KeyId) {
 				priv := key.PrivateKey
 				if priv.Encrypted {
 					continue
